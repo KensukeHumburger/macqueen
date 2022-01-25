@@ -13,6 +13,7 @@ from django.template import loader
 #from sklearn.ensemble import RandomForestRegressor
 #from sklearn.model_selection import train_test_split
 
+#xgb用のimport
 #import xgboost as xgb
 #from sklearn.model_selection import cross_validate, KFold
 
