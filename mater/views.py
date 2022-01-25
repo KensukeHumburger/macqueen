@@ -39,7 +39,7 @@ class Predmater:
         return df
 
 def index(request):
-    return render(request, 'mater/index.html', {})
+    return render(request, 'mater/index.html')
 
 def predict_input(request):
     return render(request, 'mater/index.html')
