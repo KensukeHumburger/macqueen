@@ -1,0 +1,54 @@
+{% load static %}
+<html>
+    <head>
+        <title>キャンセル率予測</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/mater.css' %}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    </head>
+
+    <body>  
+        <form action="{% url 'buzz:predict'  %}" method="post">
+            {% csrf_token %}
+
+            <h1>CancelRate Predict</h1>
+
+            <div>
+            <p>CancelRate Predictとは？</p>
+            <p>天候情報をもとにキャンセル率を予測するAIです。</p>
+            </div>
+
+            <div>
+            <label>
+            最高気温
+            <p><input type="number" name="hi" max="45" min="-35" value="0"></p>
+            </label>
+            </div>
+
+            <div>
+            <label>
+            最低気温
+            <p><input type="number" name="low" max="35" min="-45" value="0"></p>
+            </label>
+            </div>
+
+            <div>
+            <label>
+            降水量
+            <p><input type="number" name="rain" max="1000" min="0" value="0"></p>
+            </label>
+            </div>
+
+            <div>
+            <label>
+            降雪量
+            <p><input type="number" name="snow" max="1000" min="0" value="0"></p>
+            </label>
+            </div>
+
+            <button type="submit" class="btn btn-success">予測</button>
+
+        </form>
+    </body>
+</html>

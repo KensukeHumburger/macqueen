@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+
+h1 {
+    color: #ffffff;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 2em;
+    text-align: center
+}
+
+body{
+    background-image: url("https://kbdevstorage1.blob.core.windows.net/asset-blobs/19539_en_1");
+    background-repeat:  no-repeat;
+    background-position:center center;
+    background-size:cover;
+    color: #ffffff; 
+    font-family: "Arial", "メイリオ";
+    text-align: center
+}
+
+div {
+    margin-bottom: 20px; /* 要素下の隙間 */
+  }
+
+input{
+    color: #000000; 
+
+}
